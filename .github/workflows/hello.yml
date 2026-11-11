@@ -1,0 +1,28 @@
+#  workflow
+#  Should have a name
+name: Hello
+
+# On tells when the workflow should run
+on:
+  workflow_dispatch:
+
+#  jobs
+#  Should be inside the workflow
+# Job tells what the workflow should do
+
+jobs:
+  # First Job
+  say_hello:
+    # Create an Epharmal conatiner with ubuntu running
+    runs-on: ubuntu-latest
+    # That Epharmal container will have steps to execute, hence name those steps and use run: run has the command
+    steps:
+      - name: say hello to everyone
+        run: echo "Hello World"
+        
+      
+#  Steps
+#  Should be inside the job
+
+#  Actions
+#  Should be inside the steps
