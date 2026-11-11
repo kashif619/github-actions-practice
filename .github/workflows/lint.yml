@@ -5,7 +5,7 @@ name: Auto Linter
 
 on: 
   push: 
-    paths: "app.py"
+    paths: "*.py"
 
 jobs:
   code-linting:  
